@@ -1,0 +1,191 @@
+/* header section */
+header .header-banner {
+    display: table;
+    width: 100%;
+    height: calc(90vh - 500px);
+}
+header .logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+header .logo p {
+    font-size: large;
+}
+header .header-banner h2 {
+    margin-bottom: -10px;
+}
+header hr {
+    color: #000000;
+    border-width: 2px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+    width: fit-content;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 10px 10px;
+}
+nav ul li a {
+    color: #172029;
+    text-decoration: none;
+    font-size: large;
+}
+header img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+/* header section */
+
+/* main section */
+main .about-us .content {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+}
+main .about-us h3 {
+    font-weight: normal;
+    margin-bottom: 0;
+    padding: 0 0 10px 30px;
+}
+main .about-us .content p {
+    text-align: justify;
+    margin: 0 auto;
+    padding: 0 30px 10px 30px;
+    font-size: larger;
+}
+main .about-us .content img {
+    display: none;
+}
+main .recipes h3 {
+    font-weight: normal;
+    margin: 0 auto;
+    padding: 10px 0 10px 30px;
+}
+main .recipes .kitchen-links {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    margin: 20px 0;
+}
+main .recipes .kitchen-links .kitchen-image {
+    position: relative;
+    text-align: center;
+}
+main .recipes .kitchen-links .kitchen-image img {
+    padding: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+main .recipes .kitchen-links .kitchen-image :hover img {
+    opacity: 0.3;
+}
+main .recipes .kitchen-links .kitchen-image p {
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 20px;
+    color: #ffffff;
+    text-shadow: 3px 3px 9px #111111;
+    transition: .5s ease;
+    opacity: 0;
+}
+main .recipes .kitchen-links .kitchen-image:hover p {
+    opacity: 1;
+}
+/* main section */
+
+/* footer section */
+footer {
+    background-color: #cdb69f;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    width: calc(100% - 40px);
+    padding: 20px 20px;
+    overflow: hidden;
+}
+footer .information {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+footer .information .info {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+}
+footer .information .info p {
+    margin: 0 0;
+    font-size: large;
+}
+footer .information .social-media-links {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    vertical-align: baseline;
+}
+footer .information .social-media-links img {
+    width: 50px;
+    height: 50px;
+}
+/* footer section */
+
+@media only screen and (min-width: 825px) {
+    header hr {
+        display: none;
+    }
+    header nav ul li {
+        padding: 0 65px 10px 65px;
+    }
+    main .recipes h3 {
+        display: none;
+    }
+    main .about-us .content p {
+        padding: 0 15px 10px 30px;
+    }
+    main .about-us .content img {
+        display: block;
+        width: 35%;
+        height: 35%;
+        padding: 0 30px 10px 15px;
+    }
+    main .recipes .kitchen-links {
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        justify-content: center;
+    }
+}
